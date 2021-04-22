@@ -15,7 +15,7 @@ module.exports = {
   devServer: {
     publicPath: '/',
     port: 9000,
-    contentBase: path.join(process.cwd(), 'dist'),
+    contentBase: path.join(process.cwd(), 'docs'),
     host: 'localhost',
     historyApiFallback: true,
     noInfo: false,
@@ -83,7 +83,7 @@ module.exports = {
   // Кроме entry, мы можем указать поле, куда (в какой файл) собирать конечный результат. Это свойство задаётся с помощью поля output.
   //По умолчанию, весь результирующий код собирается в папку dist.
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].[hash].js',
   },
   mode: 'development',
